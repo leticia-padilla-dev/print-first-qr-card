@@ -5,7 +5,7 @@ import { Printer } from "lucide-react";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Fiesta Ibicenca · Bar Jubilats Serra · 20 de junio";
+    document.title = "Fiesta Ibicenca | Bar Jubilats Serra";
   }, []);
 
   const handlePrint = () => window.print();
