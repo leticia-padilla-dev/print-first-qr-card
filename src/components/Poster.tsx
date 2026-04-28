@@ -259,7 +259,7 @@ const Poster = () => {
               letterSpacing: "0.05em",
             }}
           >
-            +34 XXX XXX XXX
+            +34 615 92 97 35
           </div>
         </footer>
       </div>
