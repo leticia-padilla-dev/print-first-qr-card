@@ -162,7 +162,7 @@ const Poster = () => {
                 className="text-[8.5pt] uppercase tracking-[0.25em] font-medium"
                 style={{ color: "hsl(25 40% 30%)" }}
               >
-                Entrante a elegir
+                Entrantes incluidos
               </div>
               <div
                 className="text-[11.5pt] mt-1"
