@@ -18,13 +18,12 @@ const Poster = () => {
         className="absolute inset-0 w-full h-full object-cover"
         style={{
           objectPosition: "center 40%",
-          filter: "brightness(1.1) contrast(1.05) saturate(1.04)",
+          filter: "brightness(1.15) contrast(1.05) saturate(1.1)",
         }}
       />
 
       {/* Grain texture for premium printed feel */}
       <div className="grain-overlay" aria-hidden="true" />
-
 
       {/* Gradient overlay for legibility */}
       <div
@@ -38,15 +37,18 @@ const Poster = () => {
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse at center, transparent 42%, hsl(0 0% 0% / 0.24) 74%, hsl(0 0% 0% / 0.44) 100%)",
+            "radial-gradient(ellipse at center, transparent 50%, hsl(0 0% 0% / 0.15) 80%, hsl(0 0% 0% / 0.3) 100%)",
         }}
         aria-hidden="true"
       />
 
-      {/* Safe content zone — ~12mm margins */}
+      {/* Safe content zone — ~10mm bottom margin to lower the layout */}
       <div
         className="relative h-full flex flex-col"
-        style={{ padding: "14mm 14mm 12mm 14mm", color: "hsl(var(--poster-ink))" }}
+        style={{
+          padding: "14mm 14mm 10mm 14mm",
+          color: "hsl(var(--poster-ink))",
+        }}
       >
         {/* Top — Venue */}
         <header className="text-center">
@@ -97,8 +99,22 @@ const Poster = () => {
               transform: "translateX(-3mm)",
             }}
           >
-            Ibicenca
+            Ibicenca!
           </h2>
+          <svg
+            width="60"
+            height="14"
+            viewBox="0 0 60 14"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="mx-auto mt-3 opacity-90"
+            style={{ color: "hsl(var(--poster-ink))" }}
+          >
+            <path d="M 4 7 Q 10.5 1, 17 7 T 30 7 T 43 7 T 56 7" />
+          </svg>
         </div>
 
         {/* Date */}
@@ -107,20 +123,35 @@ const Poster = () => {
             className="inline-flex items-center gap-4"
             style={{ color: "hsl(var(--poster-ink))" }}
           >
-            <span style={{ width: "18mm", height: "1px", background: "hsl(var(--poster-ink) / 0.5)" }} />
+            <span
+              style={{
+                width: "18mm",
+                height: "1px",
+                background: "hsl(var(--poster-ink) / 0.5)",
+              }}
+            />
             <span
               className="uppercase tracking-[0.32em] text-[12pt] font-medium"
               style={{ textShadow: "0 2px 10px hsl(0 0% 0% / 0.35)" }}
             >
               Sábado 20 de Junio
             </span>
-            <span style={{ width: "18mm", height: "1px", background: "hsl(var(--poster-ink) / 0.5)" }} />
+            <span
+              style={{
+                width: "18mm",
+                height: "1px",
+                background: "hsl(var(--poster-ink) / 0.5)",
+              }}
+            />
           </div>
           <div
-          className="mt-3 tracking-[0.52em] text-[11pt] uppercase"
-          style={{ color: "hsl(var(--poster-gold))", textShadow: "0 2px 10px hsl(0 0% 0% / 0.28)" }}
+            className="mt-3 tracking-[0.35em] text-[10.5pt] uppercase font-semibold"
+            style={{
+              color: "hsl(var(--poster-gold))",
+              textShadow: "0 2px 10px hsl(0 0% 0% / 0.28)",
+            }}
           >
-            Cena · Baile
+            Cena 20:30–22:30 · Baile · DJ
           </div>
         </div>
 
@@ -128,15 +159,21 @@ const Poster = () => {
         <div className="text-center mt-4 space-y-1">
           <div
             className="text-[9.5pt] uppercase tracking-[0.3em] font-medium"
-            style={{ color: "hsl(var(--poster-ink-soft))", textShadow: "0 2px 8px hsl(0 0% 0% / 0.28)" }}
+            style={{
+              color: "hsl(var(--poster-ink-soft))",
+              textShadow: "0 2px 8px hsl(0 0% 0% / 0.28)",
+            }}
           >
-            Dress Code: Todo Blanco
+            Dress Code: ¡Todo Blanco!
           </div>
           <div
             className="text-[9pt] uppercase tracking-[0.28em]"
-            style={{ color: "hsl(var(--poster-ink-soft) / 0.9)", textShadow: "0 2px 8px hsl(0 0% 0% / 0.24)" }}
+            style={{
+              color: "hsl(var(--poster-ink-soft) / 0.9)",
+              textShadow: "0 2px 8px hsl(0 0% 0% / 0.24)",
+            }}
           >
-            Música & Buen Ambiente
+            DJ · Copas · Ambiente Ibicenco
           </div>
         </div>
 
@@ -146,13 +183,13 @@ const Poster = () => {
           style={{
             width: "80%",
             maxWidth: "142mm",
-            background: "hsl(0 0% 0% / 0.58)",
+            background: "hsl(0 0% 0% / 0.35)",
             color: "hsl(var(--poster-ink))",
-            padding: "6.2mm 7.4mm 5.6mm",
-            borderRadius: "4mm",
-            border: "1px solid hsl(42 90% 70% / 0.5)",
-            backdropFilter: "blur(6px)",
-            boxShadow: "0 18px 45px hsl(0 0% 0% / 0.24)",
+            padding: "5.5mm 7.4mm 5mm",
+            borderRadius: "3mm",
+            border: "1px solid hsl(42 90% 70% / 0.25)",
+            backdropFilter: "blur(4px)",
+            boxShadow: "0 10px 30px hsl(0 0% 0% / 0.15)",
           }}
         >
           <div className="text-center">
@@ -162,15 +199,20 @@ const Poster = () => {
             >
               Menú Especial
             </div>
-            <div
-              className="mx-auto mt-2"
-              style={{
-                width: "30mm",
-                height: "1px",
-                background:
-                  "linear-gradient(90deg, transparent, hsl(var(--poster-ink) / 0.95), transparent)",
-              }}
-            />
+            <svg
+              width="40"
+              height="10"
+              viewBox="0 0 40 10"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="mx-auto mt-2 opacity-80"
+              style={{ color: "hsl(var(--poster-gold))" }}
+            >
+              <path d="M 2 5 Q 6.5 1, 11 5 T 20 5 T 29 5 T 38 5" />
+            </svg>
           </div>
 
           <div className="mt-4 grid grid-cols-1 gap-[20px] text-center">
@@ -196,9 +238,7 @@ const Poster = () => {
                 className="mx-auto mt-3"
                 style={{
                   width: "42mm",
-                  height: "1px",
-                  background:
-                    "linear-gradient(90deg, transparent, hsl(var(--poster-gold) / 0.75), transparent)",
+                  borderBottom: "1px dashed hsl(var(--poster-ink) / 0.3)",
                 }}
               />
             </div>
@@ -225,9 +265,7 @@ const Poster = () => {
                 className="mx-auto mt-3"
                 style={{
                   width: "42mm",
-                  height: "1px",
-                  background:
-                    "linear-gradient(90deg, transparent, hsl(var(--poster-gold) / 0.75), transparent)",
+                  borderBottom: "1px dashed hsl(var(--poster-ink) / 0.3)",
                 }}
               />
             </div>
@@ -248,7 +286,7 @@ const Poster = () => {
                   color: "hsl(var(--poster-gold))",
                 }}
               >
-                1 bebida + 1 cubata
+                UNA bebida · UN cubata
               </div>
             </div>
           </div>
@@ -257,9 +295,7 @@ const Poster = () => {
               className="mx-auto mb-3"
               style={{
                 width: "42mm",
-                height: "1px",
-                background:
-                  "linear-gradient(90deg, transparent, hsl(var(--poster-gold) / 0.75), transparent)",
+                borderBottom: "1px dashed hsl(var(--poster-ink) / 0.3)",
               }}
             />
             <div
@@ -285,29 +321,33 @@ const Poster = () => {
         </section>
 
         {/* Reservas */}
-        <footer className="text-center mt-5">
+        <footer className="text-center mt-4">
           <div
-            className="mx-auto mb-3"
+            className="mx-auto mb-2"
             style={{
               width: "40mm",
               height: "1px",
               background:
-                "linear-gradient(90deg, transparent, hsl(var(--poster-gold) / 0.7), transparent)",
+                "linear-gradient(90deg, transparent, hsl(var(--poster-gold) / 0.5), transparent)",
             }}
           />
-            <div
-              className="uppercase tracking-[0.22em] text-[9pt]"
-              style={{ color: "hsl(var(--poster-ink-soft))" }}
-            >
-              Reserva Tu Mesa
-            </div>
           <div
-            className="mt-1 text-[14pt]"
+            className="uppercase tracking-[0.22em] text-[9.5pt] font-semibold"
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
-              fontWeight: 600,
               color: "hsl(var(--poster-ink))",
+              textShadow: "0 2px 8px hsl(0 0% 0% / 0.4)",
+            }}
+          >
+            Plazas Limitadas · Reserva Ya
+          </div>
+          <div
+            className="mt-0.5 text-[14.5pt]"
+            style={{
+              fontFamily: "'Inter', system-ui, sans-serif",
+              fontWeight: 700,
+              color: "hsl(var(--poster-gold))",
               letterSpacing: "0.05em",
+              textShadow: "0 2px 8px hsl(0 0% 0% / 0.4)",
             }}
           >
             +34 615 92 97 35
