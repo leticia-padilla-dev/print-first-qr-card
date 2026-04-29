@@ -117,68 +117,9 @@ const Poster = () => {
           </svg>
         </div>
 
-        {/* Date */}
-        <div className="text-center mt-5">
-          <div
-            className="inline-flex items-center gap-4"
-            style={{ color: "hsl(var(--poster-ink))" }}
-          >
-            <span
-              style={{
-                width: "18mm",
-                height: "1px",
-                background: "hsl(var(--poster-ink) / 0.5)",
-              }}
-            />
-            <span
-              className="uppercase tracking-[0.32em] text-[12pt] font-medium"
-              style={{ textShadow: "0 2px 10px hsl(0 0% 0% / 0.35)" }}
-            >
-              Sábado 20 de Junio
-            </span>
-            <span
-              style={{
-                width: "18mm",
-                height: "1px",
-                background: "hsl(var(--poster-ink) / 0.5)",
-              }}
-            />
-          </div>
-          <div
-            className="mt-3 tracking-[0.35em] text-[10.5pt] uppercase font-semibold"
-            style={{
-              color: "hsl(var(--poster-gold))",
-              textShadow: "0 2px 10px hsl(0 0% 0% / 0.28)",
-            }}
-          >
-            Cena 20:30–22:30 · Baile · DJ
-          </div>
-        </div>
-
-        {/* Dress code & ambiente */}
-        <div className="text-center mt-4 space-y-1">
-          <div
-            className="text-[9.5pt] uppercase tracking-[0.3em] font-medium"
-            style={{
-              color: "hsl(var(--poster-ink-soft))",
-              textShadow: "0 2px 8px hsl(0 0% 0% / 0.28)",
-            }}
-          >
-            Dress Code: ¡Todo Blanco!
-          </div>
-          <div
-            className="text-[9pt] uppercase tracking-[0.28em]"
-            style={{
-              color: "hsl(var(--poster-ink-soft) / 0.9)",
-              textShadow: "0 2px 8px hsl(0 0% 0% / 0.24)",
-            }}
-          >
-            DJ · Copas · Ambiente Ibicenco
-          </div>
-        </div>
-
+        {/* Menu card */}
         <section
-          className="mt-auto mx-auto"
+          className="mx-auto mt-6"
           style={{
             width: "fit-content",
             background: "hsl(0 0% 0% / 0.35)",
@@ -317,6 +258,68 @@ const Poster = () => {
             </div>
           </div>
         </section>
+
+        {/* Date */}
+        <div className="text-center mt-auto">
+          <div
+            className="inline-flex items-center gap-4"
+            style={{ color: "hsl(var(--poster-ink))" }}
+          >
+            <span
+              style={{
+                width: "18mm",
+                height: "1px",
+                background: "hsl(var(--poster-ink) / 0.5)",
+              }}
+            />
+            <span
+              className="uppercase tracking-[0.32em] text-[12pt] font-medium"
+              style={{ textShadow: "0 2px 10px hsl(0 0% 0% / 0.35)" }}
+            >
+              Sábado 20 de Junio
+            </span>
+            <span
+              style={{
+                width: "18mm",
+                height: "1px",
+                background: "hsl(var(--poster-ink) / 0.5)",
+              }}
+            />
+          </div>
+          <div
+            className="mt-3 tracking-[0.35em] text-[10.5pt] uppercase font-semibold"
+            style={{
+              color: "hsl(var(--poster-gold))",
+              textShadow: "0 2px 10px hsl(0 0% 0% / 0.28)",
+            }}
+          >
+            Cena 20:30–22:30 · Baile · DJ
+          </div>
+        </div>
+
+        {/* Dress code & ambiente */}
+        <div className="text-center mt-4 space-y-1">
+          <div
+            className="text-[9.5pt] uppercase tracking-[0.3em] font-medium"
+            style={{
+              color: "hsl(var(--poster-ink-soft))",
+              textShadow: "0 2px 8px hsl(0 0% 0% / 0.28)",
+            }}
+          >
+            Dress Code: ¡Todo Blanco!
+          </div>
+          <div
+            className="text-[9pt] uppercase tracking-[0.28em]"
+            style={{
+              color: "hsl(var(--poster-ink-soft) / 0.9)",
+              textShadow: "0 2px 8px hsl(0 0% 0% / 0.24)",
+            }}
+          >
+            DJ · Copas · Ambiente Ibicenco
+          </div>
+        </div>
+
+
 
         {/* Reservas */}
         <footer className="text-center mt-4">
