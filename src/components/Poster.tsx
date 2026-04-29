@@ -68,7 +68,7 @@ const Poster = () => {
         </header>
 
         {/* Title block */}
-        <div className="text-center mt-8">
+        <div className="text-center mt-6">
           <h1
             style={{
               fontFamily: "'Inter', system-ui, sans-serif",
@@ -88,7 +88,7 @@ const Poster = () => {
               fontWeight: 400,
               fontSize: "108pt",
               lineHeight: 0.72,
-              marginTop: "-8pt",
+              marginTop: "-10pt",
               color: "hsl(var(--poster-gold))",
               textShadow: "0 2px 8px rgba(0,0,0,0.65)",
               letterSpacing: "0.01em",
@@ -102,7 +102,7 @@ const Poster = () => {
         </div>
 
         {/* Date */}
-        <div className="text-center mt-6">
+        <div className="text-center mt-5">
           <div
             className="inline-flex items-center gap-4"
             style={{ color: "hsl(var(--poster-ink))" }}
@@ -117,7 +117,7 @@ const Poster = () => {
             <span style={{ width: "18mm", height: "1px", background: "hsl(var(--poster-ink) / 0.5)" }} />
           </div>
           <div
-          className="mt-4 tracking-[0.52em] text-[11pt] uppercase"
+          className="mt-3 tracking-[0.52em] text-[11pt] uppercase"
           style={{ color: "hsl(var(--poster-gold))", textShadow: "0 2px 10px hsl(0 0% 0% / 0.28)" }}
           >
             Cena · Baile
@@ -125,7 +125,7 @@ const Poster = () => {
         </div>
 
         {/* Dress code & ambiente */}
-        <div className="text-center mt-6 space-y-1.5">
+        <div className="text-center mt-4 space-y-1">
           <div
             className="text-[9.5pt] uppercase tracking-[0.3em] font-medium"
             style={{ color: "hsl(var(--poster-ink-soft))", textShadow: "0 2px 8px hsl(0 0% 0% / 0.28)" }}
@@ -285,7 +285,7 @@ const Poster = () => {
         </section>
 
         {/* Reservas */}
-        <footer className="text-center mt-7">
+        <footer className="text-center mt-5">
           <div
             className="mx-auto mb-3"
             style={{
