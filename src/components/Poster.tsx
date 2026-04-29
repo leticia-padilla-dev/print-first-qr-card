@@ -225,7 +225,7 @@ const Poster = () => {
                   color: "hsl(var(--poster-gold))",
                 }}
               >
-                UNA bebida · UN cubata
+                1 bebida · 1 cubata
               </div>
             </div>
           </div>
