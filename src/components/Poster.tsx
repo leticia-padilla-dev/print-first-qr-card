@@ -173,20 +173,20 @@ const Poster = () => {
             />
           </div>
 
-          <div className="mt-4 grid grid-cols-1 gap-[18px] text-center">
+          <div className="mt-4 grid grid-cols-1 gap-[20px] text-center">
             <div>
               <div
-                className="text-[8.75pt] uppercase tracking-[0.2em] font-semibold"
+                className="text-[9.25pt] uppercase tracking-[0.17em] font-semibold"
                 style={{ color: "hsl(var(--poster-ink-soft) / 0.96)" }}
               >
                 Entrantes incluidos
               </div>
               <div
-                className="text-[12pt] mt-1.5"
+                className="text-[13.25pt] mt-2"
                 style={{
                   fontFamily: "'Inter', system-ui, sans-serif",
-                  fontWeight: 500,
-                  lineHeight: 1.45,
+                  fontWeight: 600,
+                  lineHeight: 1.52,
                   color: "hsl(var(--poster-ink))",
                 }}
               >
@@ -205,17 +205,17 @@ const Poster = () => {
 
             <div>
               <div
-                className="text-[8.75pt] uppercase tracking-[0.2em] font-semibold"
+                className="text-[9.25pt] uppercase tracking-[0.17em] font-semibold"
                 style={{ color: "hsl(var(--poster-ink-soft) / 0.96)" }}
               >
                 Minibocadillo a elegir
               </div>
               <div
-                className="text-[12pt] mt-1.5"
+                className="text-[13.25pt] mt-2"
                 style={{
                   fontFamily: "'Inter', system-ui, sans-serif",
-                  fontWeight: 500,
-                  lineHeight: 1.45,
+                  fontWeight: 600,
+                  lineHeight: 1.52,
                   color: "hsl(var(--poster-ink))",
                 }}
               >
@@ -234,17 +234,17 @@ const Poster = () => {
 
             <div className="pt-1">
               <div
-                className="text-[8.75pt] uppercase tracking-[0.2em] font-semibold"
+                className="text-[9.25pt] uppercase tracking-[0.17em] font-semibold"
                 style={{ color: "hsl(var(--poster-ink-soft) / 0.96)" }}
               >
                 Incluye
               </div>
               <div
-                className="text-[12.5pt] mt-1.5"
+                className="text-[13.75pt] mt-2"
                 style={{
                   fontFamily: "'Inter', system-ui, sans-serif",
                   fontWeight: 600,
-                  lineHeight: 1.35,
+                  lineHeight: 1.42,
                   color: "hsl(var(--poster-gold))",
                 }}
               >
