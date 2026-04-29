@@ -35,7 +35,7 @@ const Poster = () => {
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse at center, transparent 32%, hsl(0 0% 0% / 0.48) 72%, hsl(0 0% 0% / 0.68) 100%)",
+            "radial-gradient(ellipse at center, transparent 38%, hsl(0 0% 0% / 0.3) 74%, hsl(0 0% 0% / 0.52) 100%)",
         }}
         aria-hidden="true"
       />
