@@ -139,7 +139,7 @@ const Poster = () => {
 
         {/* Menu card */}
         <section
-          className="mt-10 mx-auto"
+          className="mt-auto mx-auto"
           style={{
             width: "80%",
             maxWidth: "142mm",
@@ -281,11 +281,8 @@ const Poster = () => {
           </div>
         </section>
 
-        {/* Spacer pushes footer down */}
-        <div className="flex-1" />
-
         {/* Reservas */}
-        <footer className="text-center">
+        <footer className="text-center mt-7">
           <div
             className="mx-auto mb-3"
             style={{
