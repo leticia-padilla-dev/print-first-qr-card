@@ -6,6 +6,19 @@
     <title>Fiesta Ibicenca | Bar Jubilats Serra</title>
     <meta name="description" content="Cartel imprimible de la Fiesta Ibicenca en Bar Jubilats Serra." />
     <meta name="author" content="Bar Jubilats Serra" />
+    <script>
+      (function (location) {
+        if (location.search[1] === "/") {
+          const decoded = location.search
+            .slice(1)
+            .split("&")
+            .map((segment) => segment.replace(/~and~/g, "&"))
+            .join("?");
+
+          window.history.replaceState(null, "", location.pathname.slice(0, -1) + decoded + location.hash);
+        }
+      })(window.location);
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
