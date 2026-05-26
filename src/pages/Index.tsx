@@ -11,7 +11,7 @@ const Index = () => {
   const [posterScale, setPosterScale] = useState(1);
 
   useEffect(() => {
-    document.title = "Fiesta Ibicenca | Bar Jubilats Serra";
+    document.title = "Jubilats Serra | Print poster";
   }, []);
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const Index = () => {
       <div className="no-print w-full max-w-[210mm] flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-6">
         <div>
           <h1 className="text-sm uppercase tracking-[0.3em] text-muted-foreground break-words">
-            Cartel · Vista previa
+            Poster · Vista previa
           </h1>
           <p className="text-xs text-muted-foreground mt-1 max-w-[32ch] sm:max-w-none">
             Optimizado para impresión A4 vertical (también A3).

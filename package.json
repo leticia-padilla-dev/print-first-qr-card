@@ -1,8 +1,14 @@
 {
-  "name": "print-first-poster",
+  "name": "jubilats-print-first-assets",
   "private": true,
   "version": "0.0.0",
+  "description": "Print-first promotional poster and QR card sheet for Bar Jubilats Serra.",
+  "homepage": "https://leticia-padilla-dev.github.io/print-first-qr-card/",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leticia-padilla-dev/print-first-qr-card.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
