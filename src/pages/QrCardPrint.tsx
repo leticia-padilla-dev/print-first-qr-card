@@ -11,7 +11,7 @@ const QrCardPrint = () => {
   const [scale, setScale] = useState(1);
 
   useEffect(() => {
-    document.title = "Tarjetas QR · Bar Jubilats Serra";
+    document.title = "Jubilats Serra | Printable QR cards";
   }, []);
 
   useEffect(() => {
